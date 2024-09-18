@@ -1,0 +1,18 @@
+.streamify-progress-cards{
+    display: flex;
+    font-size: 30px;
+   
+}
+.card-color {
+    background-color: #008E97;
+}
+.user-card{
+    border-radius: 20px;
+    background-color: cornsilk;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,36 @@
+{
+    "keymetrics": {
+        "noOfUsers":"400",
+        "activeUsers":"300",
+        "totalStreams":"200",
+        "revenue":"20k",
+        "topArtist":"Artist X"
+    },
+    "chartsData": {
+        "userGrowth":{
+            "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            "totalUsers":[350,360,370,380,390,400,410,420,430,440,450,460],
+            "activeUsers":[280,290,300,310,320,330,340,350,360,370,380,390]
+        },
+        "revenueDistribution":{
+            "subscriptions":5000,
+            "ads":5000
+        },
+        "topSongs":{
+            "songs":["Shape of You", "Animal", "God is a woman", "Bohemian Rhapsody", "Song E"],
+            "streams":["1500","1200","1000","700","200"]
+        }
+
+    },
+    "dataTable": [
+        {"songName": "Song A", "artist": "Artist X", "dateStreamed": "2023-09-01", "streamCount": 300, "userID": 101},
+        {"songName": "Song B", "artist": "Artist Y", "dateStreamed": "2023-09-02", "streamCount": 290, "userID": 102},
+        {"songName": "Song C", "artist": "Artist Z", "dateStreamed": "2023-09-03", "streamCount": 280, "userID": 103},
+        {"songName": "Photograph", "artist": "Ed Sheeran", "dateStreamed": "2023-09-04", "streamCount": 400, "userID": 104},
+        {"songName": "Song E", "artist": "Adele", "dateStreamed": "2023-09-05", "streamCount": 260, "userID": 105},
+        {"songName": "Perfect", "artist": "Ed Sheeran", "dateStreamed": "2023-09-04", "streamCount": 500, "userID": 104},
+        {"songName": "Song E", "artist": "Adele", "dateStreamed": "2023-09-05", "streamCount": 260, "userID": 105},
+        {"songName": "Shape of You", "artist": "Ed Sheeran", "dateStreamed": "2023-09-04", "streamCount": 1500, "userID": 104},
+        {"songName": "Song E", "artist": "Ariana Grande", "dateStreamed": "2023-09-05", "streamCount": 260, "userID": 106}
+      ]
+}

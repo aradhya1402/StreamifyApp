@@ -1,0 +1,22 @@
+/* Ensuring header color */
+.table-custom-header th {
+    background-color: #073980 !important;
+    color: white;
+}
+
+/* Ensuring row colors */
+.table-custom-row tr {
+    background-color: #07802b !important; 
+}
+.hello {
+    background-color: #07802b !important;
+}
+/* .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #073980 !important;
+} */
+.table-custom-row tr {
+    background-color: #07802b !important;
+}
+.table-dark.table-striped .table-custom-row tr {
+    background-color: #07802b !important;
+}
