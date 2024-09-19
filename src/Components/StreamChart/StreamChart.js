@@ -23,15 +23,34 @@ export const StreamChart =({chartData}) =>{
     const options = {
         responsive:true,
         maintainAspectRatio:false,
-        scales:{
+        scales: {
             y: {
-                beginAtZero:true
+                ticks: {
+                    color: "white",
+                    font: {
+                        size:18
+                    },
+                    
+                    beginAtZero: true
+                }
+            },
+            x: {
+                ticks: {
+                    color: "white",
+                    font: {
+                        size: 18},
+                   
+                    beginAtZero: true
+                }
             }
         },
         plugins:{
             legend:{
                 labels:{
-                    color:'white'
+                    color:'white',
+                    font: {
+                        size:'20px'
+                    }
                 }
             },
             tooltip:{
@@ -40,7 +59,7 @@ export const StreamChart =({chartData}) =>{
         }
     }
     return (
-        <div stye={{height:'300px'}}>
+        <div style={{height:'40vh'}}>
             <Bar data={userGrowth} options={options} />
         </div>
     )

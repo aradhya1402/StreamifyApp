@@ -1,18 +1,38 @@
-.streamify-progress-cards{
+.streamify-progress-cards {
     display: flex;
-    font-size: 30px;
-   
-}
-.card-color {
-    background-color: #008E97;
-}
-.user-card{
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+  
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite; 
+  }
+  .user-label{   
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .user-card {
+    display: inline-block;
     border-radius: 20px;
-    background-color: cornsilk;
-    width: 20%;
-    margin: 10px;
+    overflow: hidden;
+    width: 30%;
+    height: 150px;
+    margin: 0 20px; 
     padding: 20px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
     text-align: center;
-    box-sizing: border-box;
-}
-
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(-80%);
+    }
+  }
+  

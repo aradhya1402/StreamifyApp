@@ -10,37 +10,50 @@ export const DashBoardComponent = () => {
     // console.log(streamApp.chartsData.userGrowth)
     let keyMetrics = streamApp.keymetrics;
     let chartData = streamApp.chartsData;
-    let tableData = streamApp.dataTable;
+   
 
     return (
         <div>
+           
+            <div className="container-fluid bg-dark text-light custom-full-height">
             <h1 className="text-center">Welcome to Streamify!</h1>
-            <div className="container-fluid bg-dark text-light min-vh-100">
-            <div className="d-flex justify-content-between streamify-progress-cards">
+            <div className="streamify-progress-cards">
+                
                 <div className="card user-card text-center p-3 bg-primary text-light shadow-lg">
-                    <h3>Total Users</h3>
+                    <div className="user-label">Total Users</div>
                     <div>{keyMetrics.noOfUsers}</div>
                 </div>
                 <div className="card user-card text-center p-3 bg-primary text-light shadow-lg">
-                    <h3>Active Users</h3>
+                    <div className="user-label">Active Users</div>
                     <div>{keyMetrics.activeUsers}</div>
 
                 </div>
-                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg">
-                    <h3>Total Streams</h3>
+                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg" >
+                    <div className="user-label">Total Streams</div>
                     <div>{keyMetrics.totalStreams}</div>
 
                 </div>
-                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg">
-                    <h3>Revenue</h3>
+                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg" >
+                    <div className="user-label">Revenue</div>
                     <div>{keyMetrics.revenue}</div>
 
                 </div>
-                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg">
-                    <h3>Top Artist</h3>
-                    <div>{keyMetrics.topArtist}</div>
+                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg" >
+                    <div className="user-label">Premium Subscription</div>
+                    <div>{keyMetrics.premiumSubscriptions}</div>
 
                 </div>
+                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg" >
+                    <div className="user-label">Average Screen Time</div>
+                    <div>{keyMetrics.averageStreamTime}</div>
+
+                </div>
+                <div className="card user-card text-center p-3 bg-primary text-light shadow-lg" >
+                    <div className="user-label">User Growh Rate</div>
+                    <div>{keyMetrics.userGrowthRate}</div>
+
+                </div>
+                
             </div>
             <div className="streamify-charts d-flex flex-wrap justify-content-between">
                 <div className="container user-growth-chart ">
@@ -49,7 +62,7 @@ export const DashBoardComponent = () => {
                             <div className="card-header text-center bg-gradient-primary text-light">
                                 <h2> User Growth Chart </h2>
                             </div>
-                            <div className="card-body">
+                            <div className="card-body p-3 border border-info rounded">
                                 <LineComponent chartData={chartData.userGrowth} />
                             </div>
                         </div>
@@ -61,29 +74,26 @@ export const DashBoardComponent = () => {
                             <div className="card-header text-center bg-gradient-primary text-light">
                                 <h2>Revenue Chart</h2>
                             </div>
-                            <div className="card-body ">
+                            <div className="card-body p-3 border border-info rounded d-flex justify-content-center">
                             <PieComponent chartData={chartData.revenueDistribution} />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="container revenue-chart float-right">
+                <div className="container float-right">
                     <div className="row justify-content-end mt-4">
                         <div className="col-lg-8 ml-auto">
                             <div className="card-header text-center bg-dark text-light">
                                 <h2>Top Songs</h2>
                             </div>
-                            <div className="card-body">
+                            <div className="card-body p-3 border border-info rounded">
                             <StreamChart chartData={chartData.topSongs} />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="streamify-table streamify-table bg-dark text-light p-3 shadow-lg">
-                <TableComponent tableData={tableData} />
-
-            </div>
+           
         </div>
         </div>
     )

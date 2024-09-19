@@ -81,8 +81,8 @@ export const TableComponent = ({ tableData }) => {
                     </tr>
                 </thead>
                 <tbody className="table-custom-row">
-                    {filteredData.map((row, index) => (
-                        <tr class="hello" key={index}>
+                    {filteredData && filteredData.map((row, index) => (
+                        <tr key={index}>
                             <td>{row.songName}</td>
                             <td>{row.artist}</td>
                             <td>{row.dateStreamed}</td>

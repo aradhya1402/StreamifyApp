@@ -1,0 +1,41 @@
+.sidebar {
+  
+    
+    top:0;
+    
+    bottom: 0;
+    background-color: #0d2e4e;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    color: white;
+    height: 100%;
+    z-index: 10000;
+}
+.sidebaropen {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+   color: white;
+   font-size: 20px;
+    height: 100%;
+   width: 250px;
+   
+   background: linear-gradient(to right, #0a2342, #153b59, #1e3a3a);
+
+
+}
+.openButton {
+    margin-left: 200px; 
+}
+.closeButton {
+    margin-left: 0;
+}
+.menu-container {
+    z-index: 10000;
+    height: auto;
+    color: white;
+}
+.nav-item .nav-link{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

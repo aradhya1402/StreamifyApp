@@ -1,4 +1,5 @@
 import { Legend, plugins, Tooltip } from "chart.js";
+import { color } from "chart.js/helpers";
 import React from "react";
 import { Pie } from "react-chartjs-2";
 
@@ -29,7 +30,14 @@ export const PieComponent =({chartData}) =>{
         responsive:true,
         plugins:{
             legend:{
-                position:'top'
+                position:'top',
+                labels: {
+                    color:'white',
+                    font:{
+                    size:18,
+                    
+                }
+            }
 
             },
             tooltip:{
